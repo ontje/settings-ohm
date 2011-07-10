@@ -25,7 +25,7 @@ class Setting < Ohm::Model
 			obj.save
 			obj.data
 		else
-			nil
+			false
 		end
 	end
 	
