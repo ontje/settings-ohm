@@ -43,6 +43,7 @@ Setting[:adress] # => nil
 ```
 
 Instead of raising an error, using anything other than a symbol as an identifier will return false
+
 ```ruby
 Setting["string as an identifier"] # => false
 
