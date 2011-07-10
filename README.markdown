@@ -23,6 +23,7 @@ Ohm.connect
 ```
 
 Set settings:
+
 ```ruby
 Setting[:name] = "simple settings using Ohm"
 Setting[:port] = 3456
@@ -30,6 +31,7 @@ Setting[:open] = true
 ```
 
 Retrieve settings:
+
 ```ruby
 Setting[:name] # => "simple settings using Ohm"
 Setting[:port] # => 3456
@@ -37,9 +39,11 @@ Setting[:open] # => true
 
 # unset settings return nil
 Setting[:adress] # => nil
+
 ```
 
 Instead of raising an error, using anything other than a symbol as an identifier will return false
 ```ruby
 Setting["string as an identifier"] # => false
+
 ```
